@@ -32,10 +32,14 @@ header {
 }
 
 .buscar {
-    margin-left: auto ;
-    margin-right: auto;
-    color: #b5c4cb;
+    flex: 1;  /* Permite que la caja de texto ocupe el espacio restante */
+    border: none; /* Elimina el borde por defecto del input */
+    background-color: transparent; /* Fondo transparente para que coincida con el contenedor */
+    margin: 0 10px; /* Ajusta los márgenes según tus preferencias */
+    padding: 0 10px; /* Agrega un poco de padding interno */
+    outline: none; /* Elimina el contorno al enfocar el input */
 }
+
 
 .container3 {
 display: flex;
