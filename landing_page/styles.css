@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #215696;
+}
+
+.logo {
+    width: 100px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #e2f5fe;
+    width: 40%;
+    height: 40px;
+}
+
+.lupa {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.buscar {
+    margin-left: auto ;
+    margin-right: auto;
+    color: #b5c4cb;
+}
+
+.container3 {
+display: flex;
+justify-content: space-around;
+width: 250px;
+}
+
+.Inicio, .Registrar {
+    color: black;
+    background-color: #e2f5fe;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px black;
+    padding: 0px 20px 0px 20px;
+    transition: transform 0.3s ease; /* Agrega esta línea */
+    cursor: pointer;
+}
+
+.Inicio:hover, .Registrar:hover {
+    transform: translateY(-2px); /* Agrega esta línea */
+}
+
