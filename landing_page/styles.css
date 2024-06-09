@@ -4,11 +4,12 @@ body {
 }
 
 header {
+
     display:flex;
-    position: fixed;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
+    padding: 10px;
     background-color: #215696;
     width: 100%;
 }
@@ -68,19 +69,70 @@ flex-wrap: wrap;
     transform: translateY(-2px);
 }
 
+/*Cuerpo*/
+.informacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    height: 1050px;
+    flex-wrap: wrap;
+    background-image: url('src/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.divContainerS {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.buttomS {
+    background-color: #fdd7a8;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.buttomS:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #eacca7;
+
+}
+
+.tituloS {
+    color: #00bbd8;
+    font-size: 50px;
+}
+
+.parrafoS {
+    text-align: left;
+    font-size: 20px;
+}
+
+.celular_logo {
+    width: 336.7px;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
     background-color: #215696;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     flex-wrap: wrap;
 }
-
 .container1F {
     color: white;
     text-align: left;
@@ -114,7 +166,16 @@ footer {
     flex-wrap: wrap;
     padding: 0px 50px;
     flex-grow: 1;
+}
 
+#back_top {
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #215696;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .imgGooglePlay {
@@ -123,4 +184,8 @@ footer {
 
 .imgAppStore {
     width: 120px;
+}
+
+.imgAppStore, .imgGooglePlay {
+    cursor: pointer;
 }
